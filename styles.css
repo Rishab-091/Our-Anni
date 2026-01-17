@@ -5,51 +5,43 @@
 }
 
 body {
+  background: radial-gradient(circle at top, #111, #000);
+  color: white;
   font-family: 'Inter', sans-serif;
-  background: #050505;
-  color: #fff;
   overflow-x: hidden;
 }
 
-/* LOADER */
 #loader {
   position: fixed;
   inset: 0;
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: black;
+  display: grid;
+  place-items: center;
   z-index: 9999;
 }
 
-.loader-text {
-  font-size: 1.2rem;
-  letter-spacing: 2px;
+#loader span {
   opacity: 0.7;
+  letter-spacing: 3px;
 }
 
-/* HUD */
 .hud {
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 100;
-  display: flex;
-  gap: 15px;
+  z-index: 10;
 }
 
-#musicBtn {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
+#musicToggle {
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(10px);
-  display: grid;
-  place-items: center;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
   cursor: pointer;
 }
 
-/* PANELS */
 .panel {
   min-height: 100vh;
   padding: 120px 10%;
@@ -63,20 +55,11 @@ body {
   font-size: 4.5rem;
 }
 
-.hero p {
+.typed {
   margin-top: 20px;
   opacity: 0.7;
 }
 
-.story h2,
-.timeline h2,
-.emotion h2,
-.end h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-/* TIMELINE CARDS */
 .cards {
   display: flex;
   gap: 20px;
@@ -87,16 +70,28 @@ body {
   flex: 1;
   padding: 40px;
   background: rgba(255,255,255,0.05);
-  border-radius: 20px;
   backdrop-filter: blur(12px);
-  transition: transform 0.4s;
+  border-radius: 20px;
+  transition: 0.5s;
 }
 
 .card:hover {
-  transform: translateY(-15px) scale(1.05);
+  transform: translateY(-20px) scale(1.05);
 }
 
-/* CANVAS */
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.memory-grid div {
+  height: 200px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 20px;
+}
+
 #bg {
   position: fixed;
   inset: 0;
