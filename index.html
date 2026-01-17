@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Universe</title>
 
-    <title>Happy Anniversary, Priyanka & Rishab ❤️</title>
-
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="overlay"></div>
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-text">Loading Memories…</div>
+</div>
 
-    <section class="hero">
-        <h1>Happy Anniversary</h1>
-        <h2>Priyanka & Rishab</h2>
-        <p class="sub">Every song. Every memory. Every heartbeat.</p>
+<!-- FLOATING HUD -->
+<div class="hud">
+  <div id="musicBtn">◉</div>
+  <div id="progress"></div>
+</div>
 
-        <button class="music-btn" onclick="startMusic()">▶ Play Our Songs</button>
-    </section>
+<!-- BACKGROUND -->
+<canvas id="bg"></canvas>
 
-    <section class="memories">
-        <h3>Our Story</h3>
-        <p>
-            From random conversations to forever promises,  
-            from silence to laughter,  
-            from distance to destiny.  
-            <br><br>
-            This page exists because **you exist**.
-        </p>
-    </section>
+<!-- HERO -->
+<section class="panel hero">
+  <h1>Rishab × Priyanka</h1>
+  <p>This isn’t a website.<br>This is a memory.</p>
+</section>
 
-    <section class="footer">
-        <p>Made with ❤️ by Rishab</p>
-    </section>
+<!-- STORY -->
+<section class="panel story">
+  <h2>The Beginning</h2>
+  <p>
+    Some stories don’t start loud.  
+    They start quietly — and then become everything.
+  </p>
+</section>
 
-    <script src="script.js"></script>
+<!-- TIMELINE -->
+<section class="panel timeline">
+  <h2>Moments</h2>
+  <div class="cards">
+    <div class="card">First Talk</div>
+    <div class="card">First Fight</div>
+    <div class="card">First Miss</div>
+    <div class="card">Still Here</div>
+  </div>
+</section>
+
+<!-- EMOTION -->
+<section class="panel emotion">
+  <h2>Distance Didn’t Break Us</h2>
+</section>
+
+<!-- END -->
+<section class="panel end">
+  <h2>And This Is Just The Start</h2>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
