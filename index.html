@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Universe</title>
+<title>Our Story</title>
 
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
@@ -11,54 +11,49 @@
 
 <body>
 
-<!-- LOADER -->
 <div id="loader">
-  <div class="loader-text">Loading Memories…</div>
+  <span>Loading Memories</span>
 </div>
 
-<!-- FLOATING HUD -->
 <div class="hud">
-  <div id="musicBtn">◉</div>
-  <div id="progress"></div>
+  <button id="musicToggle">♫</button>
 </div>
 
-<!-- BACKGROUND -->
 <canvas id="bg"></canvas>
 
-<!-- HERO -->
 <section class="panel hero">
-  <h1>Rishab × Priyanka</h1>
-  <p>This isn’t a website.<br>This is a memory.</p>
+  <h1>Rishab & Priyanka</h1>
+  <p class="typed"></p>
 </section>
 
-<!-- STORY -->
 <section class="panel story">
   <h2>The Beginning</h2>
-  <p>
-    Some stories don’t start loud.  
-    They start quietly — and then become everything.
-  </p>
+  <p>Some connections don’t fade. They evolve.</p>
 </section>
 
-<!-- TIMELINE -->
 <section class="panel timeline">
-  <h2>Moments</h2>
+  <h2>Our Timeline</h2>
   <div class="cards">
-    <div class="card">First Talk</div>
+    <div class="card">First Message</div>
     <div class="card">First Fight</div>
-    <div class="card">First Miss</div>
-    <div class="card">Still Here</div>
+    <div class="card">Distance</div>
+    <div class="card">Still Us</div>
   </div>
 </section>
 
-<!-- EMOTION -->
-<section class="panel emotion">
-  <h2>Distance Didn’t Break Us</h2>
+<section class="panel gallery">
+  <h2>Memories</h2>
+  <div class="memory-grid">
+    <div></div><div></div><div></div>
+  </div>
 </section>
 
-<!-- END -->
+<section class="panel emotion">
+  <h2>No Matter The Distance</h2>
+</section>
+
 <section class="panel end">
-  <h2>And This Is Just The Start</h2>
+  <h2>This Story Never Ends</h2>
 </section>
 
 <script src="script.js"></script>
